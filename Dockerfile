@@ -1,5 +1,5 @@
 # Pulling the latest base image for ubuntu
-FROM eaiesbhub/epr-jdk-tomcat
+FROM eaiesbhub/tomcat
 MAINTAINER Sudheekar
 
 ARG USER_HOME=/root
