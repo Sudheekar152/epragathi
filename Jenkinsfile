@@ -17,7 +17,7 @@ pipeline {
 
 // steps
 def buildApp() {
-	dir ( ) {
+	dir ('' ) {
 		def appImage = docker.build("epragathi/myapp:${BUILD_NUMBER}")
 	}
 }
