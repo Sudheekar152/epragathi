@@ -8,17 +8,16 @@ pipeline {
     }
 
     stages {
-	    
+
         stage("Build") {
             steps { buildApp() }
 		}
 	}
 }
 
-
 // steps
 def buildApp() {
-	dir ('srikanth365/emudhra' ) {
-		def appImage = docker.build("emudhra/epragathi:${BUILD_NUMBER}")
+	dir ('epragathi/' ) {
+		def appImage = docker.build("epragathi/myapp:${BUILD_NUMBER}")
 	}
 }
